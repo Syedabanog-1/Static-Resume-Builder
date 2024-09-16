@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Interactive Resume Builder</title>
+    <link rel="stylesheet" href=" ./styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Resume Builder</h1>
+        </header>
+        <main>
+            <section id="contact-info">
+                <h2>Contact Information</h2>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name"><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br><br>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone"><br><br>
+                </form>
+            </section>
+            <section id="education">
+                <h2>Education</h2>
+                <div id="education-list">
+                    <div class="education-block">
+                        <input type="text" placeholder="Degree">
+                        <input type="text" placeholder="Institution">
+                        <input type="text" placeholder="Duration">
+                    </div>
+                </div>
+                <button id="add-education">Add Education</button>
+            </section>
+            <section id="experience">
+                <h2>Experience</h2>
+                <div id="experience-list">
+                    <div class="experience-block">
+                        <input type="text" placeholder="Job Title">
+                        <input type="text" placeholder="Company">
+                        <input type="text" placeholder="Duration">
+                        <input type="text" placeholder="Description">
+                    </div>
+                </div>
+                <button id="add-experience">Add Experience</button>
+            </section>
+            <section id="skills">
+                <h2>Skills</h2>
+                <div id="skill-list">
+                    <div class="skill-block">
+                        <input type="text" placeholder="Skill">
+                    </div>
+                </div>
+                <button id="add-skill">Add Skill</button>
+            </section>
+            <button id="generate-resume">Generate Resume</button>
+        </main>
+    </div>
+    <div id="resume-preview"></div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
+
+
+ 
